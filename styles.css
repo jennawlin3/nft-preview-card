@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+:root {
+	--soft-blue: hsl(215, 51%, 70%);
+	--cyan: hsl(178, 100%, 50%);
+	--very-dark-blue: hsl(217, 54%, 11%);
+	--very-dark-blue2: hsl(216, 50%, 16%);
+	--very-dark-blue3: hsl(215, 32%, 27%);
+	--white: hsl(0, 0%, 100%);
+}
+
+body {
+	background-color: var(--very-dark-blue);
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container {
+	background-color: var(--very-dark-blue2);
+	width: 80vw;
+	margin: 40px auto;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+.hero {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+}
+
+.hero-container {
+	background: linear-gradient(cyan);
+	z-index: 999;
+}
+
+.container-hero:hover {
+	cursor: pointer;
+	background: linear-gradient(rgba(0, 255, 247, 0.6), url(images/image-equilibrium.jpg))
+}
+
+.container h1 {
+	color: var(--white);
+	padding: 20px 0;
+	font-size: 1.5em;
+}
+
+.container h1:hover {
+	cursor: pointer;
+	color: var(--cyan);
+}
+
+.container p {
+	color: var(--soft-blue);
+	line-height: 1.8;
+}
+
+.nft-pay-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0 20px;
+}
+
+.icon {
+	width: 15px;
+	height: 15px;
+	margin-right: 8px;
+}
+
+.icon.ethereum {
+	height: 17px;
+}
+
+.price {
+	color: var(--cyan);
+}
+
+.expires {
+	color: var(--soft-blue);
+	padding-left: 10px;
+}
+
+.author-info {
+	display: flex;
+	gap: 20px;
+	padding: 20px 0 0;
+	border-top: 1px solid #8bacda3d;
+}
+
+.author span {
+	color: var(--white);
+}
+
+.author span:hover {
+	cursor: pointer;
+}
+
+.author-pic img {
+	width: 35px;
+	height: 35px;
+	border: 1px solid var(--white);
+	border-radius: 50%; 
+}
